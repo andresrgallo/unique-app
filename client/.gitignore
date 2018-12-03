@@ -25,4 +25,7 @@ yarn-error.log*
 # vim files
 .swp
 
+# Env variables
 .env
+.env.production
+
