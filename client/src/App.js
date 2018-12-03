@@ -19,9 +19,6 @@ const Tenant = asyncComponent(() =>
 const NavBar = asyncComponent(() =>
 	import('./components/NavBar').then(module => module.default)
 );
-//const NotFound = asyncComponent(() =>
-//	import('./components/NotFound').the(module => module.default)
-//);
 
 export default class App extends Component {
 	render() {
@@ -31,7 +28,7 @@ export default class App extends Component {
 					<NavBar />
 					<Switch>
 						<Route exact path="/" component={Home} />
-						<Route exact path="/leases" component={Tenants} />
+						<Route path="/leases" component={Tenants} />
 						<Route exact path="/leases.html" component={Tenant} />
 						<Route path="*" component={NotFound} />
 					</Switch>

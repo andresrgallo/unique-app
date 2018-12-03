@@ -24,6 +24,7 @@ export default class Tenant extends Component {
 	//Get the lease id
 	callBackendAPI = async () => {
 		var url = window.location.href;
+
 		let leaseId = url.split('=')[1];
 		const response = await fetch(
 			`${process.env.REACT_APP_API_URL}/v1/leases/${leaseId}`
