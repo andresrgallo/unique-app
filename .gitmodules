@@ -1,0 +1,3 @@
+[submodule "unique-API"]
+	path = unique-API
+	url = https://github.com/andresrgallo/unique-API
