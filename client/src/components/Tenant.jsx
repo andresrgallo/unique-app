@@ -24,17 +24,20 @@ export default class Tenant extends Component {
 	//Get the lease id
 	callBackendAPI = async () => {
 		var url = window.location.href;
-
 		let leaseId = url.split('=')[1];
-		const response = await fetch(
-			`${process.env.REACT_APP_API_URL}/v1/leases/${leaseId}`
-		);
-		const body = await response.json();
+		if (leaseId !== undefined) {
+			const response = await fetch(
+				`${process.env.REACT_APP_API_URL}/v1/leases/${leaseId}`
+			);
+			const body = await response.json();
 
-		if (response.status !== 200) {
-			throw Error(body.message);
+			if (response.status !== 200) {
+				throw Error(body.message);
+			}
+			return body;
+		} else {
+			this.props.history.push('/leases');
 		}
-		return body;
 	};
 
 	render() {

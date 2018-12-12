@@ -1,13 +1,16 @@
 # Project Overview
 
-This project was developed to access a `lease Web API`, to gather information about
-all the available tenants and their rental payments.
+Application that generates a list of Tenants for a 'non-existant' Real Estate Agency with a payments ledger for each Tenant. To generate the data, an API was built using Nodejs. With the use of vanilla javascript, random rent, frequency periods, rent amount and dates, are produced and accessed by the front end. The front end was built using REACT library. Front and back end were tested using Jest and enzyme libraries.
+
+# Running life at:
+
+`https://unique-realestate.netlify.com`
 
 # Running the app
 
-### `$ git clone https://github.com/andresrgallo/rental-app.git`
+### `$ git clone https://github.com/andresrgallo/unique-app.git`
 
-### `$ cd rental-app`
+### `$ cd unique-app`
 
 ### `$ npm install`
 
@@ -23,9 +26,10 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## Languages and Tools
 
-- The project was build using the React library and plain CSS.
+- The project was build using the Nodejs, express, React library and plain CSS.
 - The project includes media queries for small phones, tablets and laptops.
-- For testing, two libraries were installed: `Jest` and `Enzyme`
+- For testing the front end, two libraries were installed: `Jest` and `Enzyme`
+- The back end was tested with Jest and Supertests.
 
 # Project Construction
 
