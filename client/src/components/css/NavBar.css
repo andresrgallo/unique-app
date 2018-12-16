@@ -53,12 +53,25 @@ a:active {
 		line-height: 2.1rem;
 	}
 }
-/* ----- Small Tablest to Small Phones ----- */
+/* ----- Small Tablets ----- */
 @media only screen and (max-width: 767px) {
 	.logo a {
-		font-size: 1.3rem;
+		font-size: 1.4rem;
 	}
 	.tenants a {
 		line-height: 1.5rem;
+	}
+
+	/* ----- Small Phones ----- */
+	@media only screen and (max-width: 540px) {
+		#navbar-links {
+			padding-left: 0.5rem;
+		}
+		.logo a {
+			font-size: 1.1rem;
+		}
+		.tenants a {
+			font-size: 0.9rem;
+		}
 	}
 }

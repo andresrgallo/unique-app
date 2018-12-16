@@ -10,6 +10,9 @@
 .wrapper {
 	margin-right: auto;
 	margin-left: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 #title {
@@ -77,10 +80,10 @@ table td {
 
 @media only screen and (max-width: 1200px) {
 	table {
-		width: 30rem;
-		font-size: 0.8rem;
-		line-height: 1rem;
-		margin: 0 0 0 10rem;
+		width: 40rem;
+		font-size: 1.2rem;
+		line-height: 2rem;
+		/*margin: 0 0 0 10rem;*/
 	}
 	#title {
 		width: 50rem;
@@ -90,13 +93,18 @@ table td {
 	thead {
 		font-size: 1.2rem;
 	}
+	.tenants-container {
+		height: 95vh;
+		background-size: 140vh;
+	}
 }
 
 /* ----- Small Tablets ----- */
 
 @media only screen and (max-width: 767px) {
 	table {
-		margin: 0 0 0 2rem;
+		/*	margin: 0 0 0 2rem;*/
+		line-height: 1.2rem;
 	}
 	#title {
 		width: 30rem;
@@ -111,12 +119,12 @@ table td {
 
 @media only screen and (max-width: 540px) {
 	table {
-		margin: 0 0 0 1rem;
-		width: 23rem;
+		/*	margin: 0 0 0 1rem;*/
+		width: 19rem;
 		font-size: 0.7rem;
 	}
 	#title {
-		width: 24rem;
+		width: 20rem;
 	}
 	thead {
 		font-size: 0.8rem;

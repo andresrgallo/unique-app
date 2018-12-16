@@ -1,11 +1,13 @@
 .tenant-container {
 	box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
 	background-color: #f4f2eb;
-	height: 150vh;
+	height: 240vh;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
 		url(../../images/desk.jpg);
 	background-size: cover;
 	background-position: center;
+	display: flex;
+	flex-direction: column;
 }
 
 #info {
@@ -77,17 +79,14 @@ th {
 
 @media only screen and (max-width: 1200px) {
 	#tenant-title {
-		width: 47rem;
 		font-size: 1.4rem;
 	}
 	#tenant-table {
-		width: 30rem;
-		font-size: 0.8rem;
-		line-height: 1rem;
-		margin: 0 0 0 10rem;
+		font-size: 1rem;
+		line-height: 1.2rem;
 	}
 	.tenant-container {
-		height: 250vh;
+		height: 190vh;
 	}
 }
 
@@ -97,26 +96,26 @@ th {
 	#tenant-title {
 		width: 32rem;
 	}
-	#tenant-table {
-		margin: 0 0 0 2rem;
-	}
 }
 
 /* ----- Small Phones  ----- */
 
 @media only screen and (max-width: 540px) {
 	#tenant-title {
-		width: 24rem;
+		width: 20rem;
+		font-size: 1rem;
 	}
 	.tenant-container {
-		height: 170vh;
+		height: 240vh;
 	}
 	#tenant-table {
-		margin: 0 0 0 1rem;
-		width: 23rem;
+		width: 20rem;
 		font-size: 0.7rem;
 	}
 	#tenant-table thead {
 		font-size: 0.8rem;
+	}
+	th {
+		padding-left: 0.5rem;
 	}
 }

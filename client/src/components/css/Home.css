@@ -33,11 +33,16 @@
 }
 
 @media only screen and (max-width: 1200px) {
+	.home-container {
+		height: 130vh;
+		padding: 0 10px;
+	}
 	.hero {
 		font-size: 9.5rem;
 	}
 	#home-line {
 		font-size: 2.5rem;
+		width: 45%;
 	}
 }
 
@@ -53,12 +58,22 @@
 }
 
 @media only screen and (max-width: 540px) {
-	.hero {
+	.home-container {
+		height: 100vh;
+	}
+	.home-icon {
 		font-size: 7.5rem;
 		width: 65%;
 	}
+	.logo a {
+		font-size: 1rem;
+	}
+	.tenants a {
+		font-size: 0.8rem;
+	}
 	#home-line {
-		font-size: 1.5rem;
-		width: 50%;
+		font-size: 1rem;
+		padding-top: 10px;
+		width: 40%;
 	}
 }
